@@ -1,0 +1,23 @@
+{
+  "name": "restaurantpage",
+  "version": "1.0.0",
+  "description": "Restaurant page made for the Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeeseGod/restaurantPage.git"
+  },
+  "author": "MeeseGod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeeseGod/restaurantPage/issues"
+  },
+  "homepage": "https://github.com/MeeseGod/restaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
