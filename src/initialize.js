@@ -1,3 +1,17 @@
+function createHeader(){
+    let header = document.createElement('h1');
+    header.setAttribute('id', 'header');
+    header.textContent = "O'Brien's Greenery";
+    document.getElementById('content').appendChild(header);
+}
+
+function createSlogan(){
+    let slogan = document.createElement('p');
+    slogan.setAttribute('id', 'slogan');
+    slogan.textContent = "O'Brien's Soylent - The Food of the People!"
+    document.getElementById('content').appendChild(slogan);
+}
+
 function createNav(){
     let nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
@@ -40,6 +54,8 @@ function createContactButton(){
 }
 
 function initializePage(){
+    createHeader();
+    createSlogan();
     createNav();
     createDisplay();
 }
