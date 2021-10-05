@@ -17,7 +17,6 @@ function createNav(){
     nav.setAttribute('id', 'nav');
     document.getElementById('content').appendChild(nav);
     createNavButtons();
-    // document.body.appendChild(nav);
 }
 
 function createDisplay(){
