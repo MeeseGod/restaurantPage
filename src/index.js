@@ -1,4 +1,12 @@
 import initializePage from "./initialize"
+import displayHome from "./home"
+import emptyContent from "./emptyDiv"
+
 
 initializePage();
-console.log("This is a test statement");
+displayHome();
+
+
+document.getElementById('menuButton').addEventListener('click', function(){
+    emptyContent();
+})
