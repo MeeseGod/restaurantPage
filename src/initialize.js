@@ -34,6 +34,7 @@ function createNavButtons(){
 function createHomeButton(){
     let home = document.createElement('button');
     home.setAttribute('id', 'homeButton');
+    home.setAttribute('class', 'navButton');
     home.textContent = 'Home';
     document.getElementById('nav').appendChild(home);
 }
@@ -41,6 +42,7 @@ function createHomeButton(){
 function createMenuButton(){
     let menu = document.createElement('button');
     menu.setAttribute('id', 'menuButton');
+    menu.setAttribute('class', 'navButton');
     menu.textContent = 'Menu';
     document.getElementById('nav').appendChild(menu);
 }
@@ -48,6 +50,7 @@ function createMenuButton(){
 function createContactButton(){
     let contact = document.createElement('button');
     contact.setAttribute('id', 'contactButton');
+    contact.setAttribute('class', 'navButton');
     contact.textContent = 'Contact';
     document.getElementById('nav').appendChild(contact);
 }

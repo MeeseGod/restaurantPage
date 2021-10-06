@@ -5,8 +5,16 @@ function appendImage(){
     document.getElementById("display").appendChild(img);
 }
 
+function createDescription(){
+    let descHeader = document.createElement('h2');
+    descHeader.setAttribute('id', 'descHeader');
+    descHeader.textContent = "Our Mission";
+    document.getElementById("display").appendChild(descHeader);
+}
+
 function displayHome(){
     appendImage();
+    createDescription();
 }
 
 export default displayHome;
