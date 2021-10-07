@@ -1,7 +1,11 @@
 function createDescription(){
+    let homeContainer = document.createElement('div');
+    homeContainer.setAttribute('id', 'homeContainer');
+    document.getElementById('display').appendChild(homeContainer);
+
     let descContainer = document.createElement('div');
     descContainer.setAttribute('id', 'descContainer');
-    document.getElementById('display').appendChild(descContainer);
+    document.getElementById('homeContainer').appendChild(descContainer);
 
     let descHeader = document.createElement('h2');
     descHeader.setAttribute('id', 'descHeader');
@@ -31,6 +35,11 @@ function createDescription(){
     descParagraph3.setAttribute('class', 'descParagraphs');
     descParagraph3.textContent = "Now you too may enjoy the fine taste of Soylent Green at an affordable price! Visit your local Greenery and ask for any number of our Soylent Green products.";
     document.getElementById("descContainer").appendChild(descParagraph3);
+
+    let image = document.createElement('img');
+    image.setAttribute('id', 'homeImage');
+    image.src = "images/soylent1.png";
+    document.getElementById('homeContainer').appendChild(image);
 };
 
 function displayHome(){
