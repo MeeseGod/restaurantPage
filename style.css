@@ -77,12 +77,6 @@ body{
     max-width: 1000px;
 }
 
-#advertImage{
-    margin: auto;
-    max-height: 400px;
-    max-width: 400px;
-}
-
 #descHeader, #menuHeader, #contactHeader{
     font-family: 'Roboto Slab', serif;
     color: white;
@@ -97,6 +91,10 @@ body{
     margin:auto
 }
 
+#homeContainer, #menuContainer, #contactContainer{
+    animation: fadeIn 3s;
+}
+
 .descParagraphs{
     margin-top: 5px;
     font-family: 'Roboto Slab', serif;
@@ -104,8 +102,25 @@ body{
     color: white;
 }
 
+#homeImage{
+    max-height: 350px;
+    display: flex;
+    margin:auto;
+    margin-top: 50px;
+}
+
 #menuGrid{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
 }
