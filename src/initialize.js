@@ -8,7 +8,7 @@ function createHeader(){
 function createSlogan(){
     let slogan = document.createElement('p');
     slogan.setAttribute('id', 'slogan');
-    slogan.textContent = "O'Brien's Soylent - The Food of the People!"
+    slogan.textContent = "Soylent Green - The Food of the People!";
     document.getElementById('content').appendChild(slogan);
 }
 
