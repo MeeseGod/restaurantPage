@@ -115,6 +115,19 @@ body{
     grid-template-rows: repeat(3, 300px);
 }
 
+#menuDiv0, #menuDiv1, #menuDiv2, #menuDiv3{
+    padding-bottom: 40px;
+}
+
+#menuDiv4, #menuDiv5{
+    padding-bottom: 60px;
+}
+
+#menuDiv0, #menuDiv1, #menuDiv2, #menuDiv3, #menuDiv4, #menuDiv5{
+    margin-left: 20px;
+    margin-right: 20px
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

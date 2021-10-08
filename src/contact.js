@@ -3,7 +3,7 @@ function displayContactInfo(){
     contact.setAttribute('id', 'contactContainer');
     document.getElementById('display').appendChild(contact);
 
-    let contactHeader = document.createElement('h1');
+    let contactHeader = document.createElement('h2');
     contactHeader.setAttribute('id', 'contactHeader');
     contactHeader.textContent = "Contact Us"
     document.getElementById('contactContainer').appendChild(contactHeader);
