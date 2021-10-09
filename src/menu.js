@@ -14,6 +14,7 @@ function displayMenu(){
 
     generateDivs();
     populateMenu();
+    generateButtons();
 }
 
 function generateDivs(){
@@ -22,6 +23,16 @@ function generateDivs(){
         createMenuDiv.setAttribute('id', `menuDiv${i}`);
         createMenuDiv.setAttribute('class', 'menuDivs');
         document.getElementById('menuGrid').appendChild(createMenuDiv);
+    }
+}
+
+function generateButtons(){
+    for(let i = 0; i < 6; i++){
+        let btn = document.createElement('button');
+        btn.setAttribute('id', `menuButton${i}`);
+        btn.setAttribute('class', 'menuButtons');
+        btn.textContent = "Order"
+        document.getElementById(`menuDiv${i}`).appendChild(btn);
     }
 }
 
@@ -68,23 +79,40 @@ function populateMenu(){
     let item4header = document.createElement('h3');
     item4header.setAttribute('id', 'item4');
     item4header.setAttribute('class', 'menuItem');
-    item4header.textContent = "Soylent Shake";
+    item4header.textContent = "Soylent Jello";
+
+    let item4description = document.createElement('p');
+    item4description.setAttribute('id', 'item4description');
+    item4description.setAttribute('class', 'menuDescription');
+    item4description.textContent = "The jiggly treat that can't be beat (Nor properly digested)";
 
     document.getElementById('menuDiv3').appendChild(item4header);
+    document.getElementById('menuDiv3').appendChild(item4description);
 
     let item5header = document.createElement('h3');
     item5header.setAttribute('id', 'item5');
     item5header.setAttribute('class', 'menuItem');
-    item5header.textContent = "Soylent Shake";
+    item5header.textContent = "Canned Soylent Green";
+
+    let item5description = document.createElement('p');
+    item5description.setAttribute('id', 'item5description');
+    item5description.setAttribute('class', 'menuDescription');
+    item5description.textContent = "Classic Soylent Green from a can - What more could you ask for?";
 
     document.getElementById('menuDiv4').appendChild(item5header);
+    document.getElementById('menuDiv4').appendChild(item5description);
 
     let item6header = document.createElement('h3');
     item6header.setAttribute('id', 'item6');
     item6header.setAttribute('class', 'menuItem');
-    item6header.textContent = "Soylent Shake";
+    item6header.textContent = "Soylent Pasta";
+
+    let item6description = document.createElement('p');
+    item6description.setAttribute('id', 'item6description');
+    item6description.setAttribute('class', 'menuDescription');
+    item6description.textContent = "Green noodley goodness on your plate! (Any movement is a byproduct of heat release and nothing more)";
 
     document.getElementById('menuDiv5').appendChild(item6header);
+    document.getElementById('menuDiv5').appendChild(item6description);
 }
-
 export default displayMenu;
