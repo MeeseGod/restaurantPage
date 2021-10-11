@@ -160,10 +160,27 @@ body{
     height: 30px;
 }
 
-/* .menuButtons:hover{
-    text-decoration: underline;
-    cursor: pointer;
-} */
+#contactInformation{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactHeaders{
+    margin-bottom: 0;
+}
+
+.contactParas{
+    margin-top: 5px;
+}
+
+#textElements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
 
 @keyframes fadeIn {
     0% {
