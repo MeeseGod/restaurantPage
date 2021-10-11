@@ -160,6 +160,11 @@ body{
     height: 30px;
 }
 
+.menuButtons:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #contactInformation{
     display: flex;
     flex-direction: column;
